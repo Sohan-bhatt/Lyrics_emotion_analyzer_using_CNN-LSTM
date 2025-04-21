@@ -171,7 +171,7 @@ def plot_pytorch_history(history, title):
 st.title("🎵 Lyrics Emotion Analyzer + Detailed Metrics")
 
 # Load & prep
-data_path = st.sidebar.text_input("CSV path", "/home/sohanx1/Downloads/Sohan/Music Analysis/DATA/SingleLabel.csv")
+data_path = st.sidebar.text_input("CSV path", "SingleLabel.csv")
 df = load_data(data_path)
 st.sidebar.write(f"Loaded {df.shape[0]} rows")
 labels = sorted(df['label'].unique())
